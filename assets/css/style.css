@@ -1,0 +1,191 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Warna latar belakang lembut */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Flexbox untuk menempatkan konten di tengah */
+main {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Untuk mengatur konten tetap di tengah halaman */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* Mengisi sisa tinggi halaman */
+}
+
+h2 {
+    text-align: center;
+    color: #555555;
+    font-size: 2rem;
+}
+
+h2, h3, p {
+    text-align: center; /* Menyusun teks ke tengah */
+}
+
+div {
+    background-color: #e8f1f8; /* Warna lembut untuk card project */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; /* Menyusun teks di dalam div ke tengah */
+}
+
+
+div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h3 {
+    color: #333333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    margin: 0 auto 15px; /* Menempatkan gambar di tengah */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff; /* Warna link biru lembut */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Warna link saat hover */
+}
+
+a:visited {
+    color: #6c757d; /* Warna link saat sudah dikunjungi */
+}
+
+/* Gaya Navbar */
+header {
+    background-color: #ffffff; /* Latar belakang navbar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan navbar */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Menyusun item ke tengah */
+    align-items: center;
+    height: 60px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333333; /* Warna teks link */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Warna teks saat hover */
+}
+
+nav ul li a.active {
+    color: #0056b3; /* Warna link aktif */
+    border-bottom: 2px solid #0056b3; /* Garis bawah untuk link aktif */
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #999999;
+    font-size: 0.9rem;
+    position: relative;
+}
